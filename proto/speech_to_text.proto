@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package speech_to_text;
+option go_package = "gitlab.com/icom/translate/gen/proto/speech_to_text;speech_to_text";
+// The SpeechToTextService definition.
+service SpeechToTextService {
+  rpc SpeechToText (SpeechToTextRequest) returns (SpeechToTextResponse);
+  rpc SpeechToTextStream (stream SpeechToTextStreamRequest) returns (stream SpeechToTextStreamResponse);
+}
+
+// Request message for speech to text.
+message SpeechToTextRequest {
+  bytes content = 1; // The input text to translate.
+  string language_code = 2; //speech language target to text
+}
+
+// Response message for text result.
+message SpeechToTextResponse {
+  string transcript = 1; // The text result.
+  string duration = 2; //duration time speech change to text
+}
+
+message SpeechToTextStreamRequest {
+  bytes content = 1;
+  string language_code = 2;
+}
+
+message SpeechToTextStreamResponse {
+  string transcript = 1;
+  string start_ms = 2;
+  string end_ms = 3;
+}
+

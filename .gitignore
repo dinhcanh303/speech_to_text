@@ -1,0 +1,8 @@
+**/__pycache__/
+
+
+/ou/convert_*.py
+
+/venv
+*.wav
+*.mp3

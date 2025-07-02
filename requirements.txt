@@ -1,0 +1,16 @@
+grpcio==1.71.0
+grpcio-tools==1.71.0
+PyYAML==6.0.1
+protobuf==5.29.4
+ray==2.47.1
+faster_whisper
+dotenv
+pydub==0.25.1
+fastapi==0.115.13
+librosa==0.11.0
+ray[serve]
+# tokenize_uk
+# mosestokenizer
+# wtpsplit
+numpy==2.2.6
+python-multipart==0.0.20

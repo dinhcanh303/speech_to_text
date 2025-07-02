@@ -1,0 +1,62 @@
+2025-07-02 15:01:31,812 - ERROR - [36mray::WhisperWorker.transcribe_bytes()[39m (pid=2880426, ip=172.28.0.129, actor_id=c6717f7fcb8e70d5713a3bb501000000, repr=<whisper_ray.WhisperWorker object at 0x7b84f0fc2300>)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dinhcanh/Documents/workspace/my/speech_to_text/whisper_ray.py", line 82, in transcribe_bytes
+    return self.asr.transcribe_bytes(content,language)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dinhcanh/Documents/workspace/my/speech_to_text/whisper.py", line 89, in transcribe_bytes
+    segments, _info = self.model.transcribe(audio_file,
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dinhcanh/Documents/workspace/my/speech_to_text/.venv/lib/python3.12/site-packages/faster_whisper/transcribe.py", line 478, in transcribe
+    tokenizer = Tokenizer(
+                ^^^^^^^^^^
+  File "/home/dinhcanh/Documents/workspace/my/speech_to_text/.venv/lib/python3.12/site-packages/faster_whisper/tokenizer.py", line 29, in __init__
+    raise ValueError(
+ValueError: 'enzz' is not a valid language code (accepted language codes: af, am, ar, as, az, ba, be, bg, bn, bo, br, bs, ca, cs, cy, da, de, el, en, es, et, eu, fa, fi, fo, fr, gl, gu, ha, haw, he, hi, hr, ht, hu, hy, id, is, it, ja, jw, ka, kk, km, kn, ko, la, lb, ln, lo, lt, lv, mg, mi, mk, ml, mn, mr, ms, mt, my, ne, nl, nn, no, oc, pa, pl, ps, pt, ro, ru, sa, sd, si, sk, sl, sn, so, sq, sr, su, sv, sw, ta, te, tg, th, tk, tl, tr, tt, uk, ur, uz, vi, yi, yo, zh, yue)
+2025-07-02 15:36:18,188 - ERROR - [36mray::WhisperWorker.process_chunk()[39m (pid=2978724, ip=172.28.0.129, actor_id=42026c38d9fe7f05ae4b2d7101000000, repr=<whisper_ray.WhisperWorker object at 0x779a7c33e690>)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dinhcanh/Documents/workspace/my/speech_to_text/whisper_ray.py", line 70, in process_chunk
+    audio = np.concatenate(self.buffer)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: need at least one array to concatenate
+2025-07-02 16:05:08,850 - ERROR - [36mray::WhisperWorker.transcribe_bytes()[39m (pid=3039395, ip=172.28.0.129, actor_id=7da4e3ae73d406107c97ac3401000000, repr=<whisper_ray.WhisperWorker object at 0x70e0252d6900>)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dinhcanh/Documents/workspace/my/speech_to_text/whisper_ray.py", line 85, in transcribe_bytes
+    return self.asr.transcribe_bytes(content,language)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dinhcanh/Documents/workspace/my/speech_to_text/whisper.py", line 82, in transcribe_bytes
+    audio_file = io.BytesIO(bytes)
+                 ^^^^^^^^^^^^^^^^^
+TypeError: a bytes-like object is required, not 'type'
+2025-07-02 16:05:42,446 - ERROR - [36mray::WhisperWorker.transcribe_bytes()[39m (pid=3039399, ip=172.28.0.129, actor_id=6ef8a9409a566a6a22d8597e01000000, repr=<whisper_ray.WhisperWorker object at 0x73e7a9692630>)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dinhcanh/Documents/workspace/my/speech_to_text/whisper_ray.py", line 85, in transcribe_bytes
+    return self.asr.transcribe_bytes(content,language)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dinhcanh/Documents/workspace/my/speech_to_text/whisper.py", line 82, in transcribe_bytes
+    audio_file = io.BytesIO(bytes)
+                 ^^^^^^^^^^^^^^^^^
+TypeError: a bytes-like object is required, not 'type'
+2025-07-02 16:05:43,575 - ERROR - [36mray::WhisperWorker.transcribe_bytes()[39m (pid=3039397, ip=172.28.0.129, actor_id=332835ff8196074b040c905b01000000, repr=<whisper_ray.WhisperWorker object at 0x746080f6ad20>)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dinhcanh/Documents/workspace/my/speech_to_text/whisper_ray.py", line 85, in transcribe_bytes
+    return self.asr.transcribe_bytes(content,language)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dinhcanh/Documents/workspace/my/speech_to_text/whisper.py", line 82, in transcribe_bytes
+    audio_file = io.BytesIO(bytes)
+                 ^^^^^^^^^^^^^^^^^
+TypeError: a bytes-like object is required, not 'type'
+2025-07-02 16:06:45,749 - ERROR - [36mray::WhisperWorker.transcribe_bytes()[39m (pid=3044093, ip=172.28.0.129, actor_id=8e27858144d5c6f279a8883001000000, repr=<whisper_ray.WhisperWorker object at 0x75e5760ae630>)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dinhcanh/Documents/workspace/my/speech_to_text/whisper_ray.py", line 86, in transcribe_bytes
+    return self.asr.transcribe_bytes(content,language)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dinhcanh/Documents/workspace/my/speech_to_text/whisper.py", line 82, in transcribe_bytes
+    audio_file = io.BytesIO(bytes)
+                 ^^^^^^^^^^^^^^^^^
+TypeError: a bytes-like object is required, not 'type'

@@ -1,0 +1,17 @@
+applications:
+  - name: whisper_app
+    import_path: whisper_rest.WhisperDeployment
+    route_prefix: /whisper
+    runtime_env:
+      working_dir: .
+      pip:
+        - fastapi
+        - uvicorn
+        - faster-whisper
+        - torch
+    deployments:
+      - name: WhisperDeployment
+        num_replicas: 1
+        ray_actor_options:
+          num_gpus: 1
+
